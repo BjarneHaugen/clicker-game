@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    height: auto;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+button {
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: transparent; /* Remove blue background */
+    border: none;
+    border-radius: 5px;
+    width: auto; /* Set button width to 25% of the screen */
+    height: auto; /* Maintain aspect ratio */
+    align-self: center;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+button.shake {
+    animation: shake 0.3s;
+}
+
+#clickButton {
+    font-size: 25vh;
+    color: #333;
+}
+
+#container_clicker {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
